@@ -17,8 +17,8 @@
     font-weight: 400;
     font-style: normal;
 }
-body{
-    width: 100%;
+body{  
+    width: 100vw;
     height: 100vh;
     background: rgb(240,239,243);
     margin: auto;
@@ -28,6 +28,7 @@ body{
     align-items: center;
 }
 .main{
+    position: fixed;
     width: 350px;
     height: 500px;
     background-color: white;
@@ -36,10 +37,14 @@ body{
     0.2em 0.2em 1em rgba(64, 64, 64, 0.6);
     padding: 30px;
     overflow-y: scroll;
+    margin-right: 30%;
+    margin-top: 10%;
+    z-index: 1;
+
     
 }
 .main::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+    display: none; 
 }
  .main form{
     width: 100%;
@@ -56,7 +61,7 @@ body{
     box-shadow: none;
     width: 100%;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 300;
     padding: 7px 12px;
  }
  .main form i{
@@ -82,9 +87,93 @@ body{
     padding-left: 20px;
  }
 .product .product_details h2{
-    font-size: 17px;
+    font-size: 14px;
 }
 .product .product_details h3{
     font-size: 10px;
 }
 
+
+
+
+
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+.nav{
+    padding: 30px 40px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav .left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.nav .left h3{
+    font-weight: 400;
+    color: #18022d;
+    
+}
+.nav .left h2{
+    font-weight: 700;
+    color: #188ed8;
+    
+}
+.nav .right h2{
+    font-weight: 600;
+    color: #18022d;
+    
+}
+.nav .right p{
+    font-weight: 700;
+    font-size: 14px;
+    color: #188ed8;
+}
+.intro{
+    width: 40%;
+    font-size: 20px;
+    margin-left: 50%;
+    margin-top: 10%;
+    
+}
+.intro .hero{
+    padding: 60px 50px 40px 20px;
+    
+    transform: translateY(100%);
+}
+.intro .hero .lefthero{
+    width: 80%;
+    padding-top: 10px ;
+    padding-left: 50px;
+    
+}
+
+.intro .hero .lefthero h1{
+    font-size: 55px;
+    font-weight: 600;
+    
+}
+.intro .hero .lefthero p{
+    line-height: 30px;
+    font-size: 18px;
+}
+.slider{
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: #18022d;
+    width: 100%;
+    height: 100%;
+    transform: translateY(50%);
+}
+#f1{
+    color: #054a75;
+}
